@@ -338,13 +338,13 @@ out = [0 0 2 6*t];
 end
 
 
-% %% Til funksjonsblokken i simuleringen 
+% %% To the function block in the simulation 
 % function [x, y, z] = trajectory(t, trajCoeff, trajTime)
 % 
-% % Begrens tiden til trajektoriens tidsintervall
+% % Limit the time to the trajectory's time interval
 % t = max(trajTime(1), min(t, trajTime(5)));
 % 
-% % Velg riktig polynom for hvert tidsintervall
+% % Select the correct polynomial for each time interval
 % if t <= trajTime(2)
 %     C = trajCoeff(1:5,:);
 %     F = F4(t);
@@ -362,10 +362,10 @@ end
 %     F = F4(t);
 % end
 % 
-% % Beregn posisjonene
+% % Calculate the positions
 % pos = F*C;
 % 
-% % Konverter fra mm til meter
+% % Convert from mm to meters
 % x = pos(1)/1000;
 % y = pos(2)/1000;
 % z = pos(3)/1000;
@@ -373,7 +373,7 @@ end
 % end
 % 
 % 
-% %% Lokale funksjoner
+% %% Local functions
 % 
 % function out = F4(t)
 % out = [1 t t^2 t^3 t^4];
