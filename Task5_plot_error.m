@@ -1,7 +1,10 @@
 % Plotting absolute error
 
-t = out.Absolute_position_error.time;
-e = out.Absolute_position_error.signals.values;
+t = SDOSimTest_Log.Absolute_position_error.time;
+e = SDOSimTest_Log.Absolute_position_error.signals.values;
+
+%t = out.Absolute_position_error.time;
+%e = out.Absolute_position_error.signals.values;
 
 targetTimes = [0 2 4 6 8];
 indices = zeros(size(targetTimes));
