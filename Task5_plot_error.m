@@ -1,3 +1,6 @@
+% Copilot chat used to generate plot code
+
+
 % Plotting absolute error
 
 t = SDOSimTest_Log.Absolute_position_error.time;
